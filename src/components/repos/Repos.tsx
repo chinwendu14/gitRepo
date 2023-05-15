@@ -5,7 +5,6 @@ import { BsStar, BsLightbulb } from "react-icons/bs";
 import { FaTimes } from "react-icons/fa";
 import { CiPlane } from "react-icons/ci";
 import { TbArtboard } from "react-icons/tb";
-import restApi from "../../restApi/restApi";
 
 interface props {
   name?: string;
