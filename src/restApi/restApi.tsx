@@ -2,14 +2,14 @@ import React from "react";
 import axios from "axios";
 
 export const token =
-  "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";
+  "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";
 export const restApi = async () => {
   try {
     const config = {
       headers: {
         "Content-Type": "application/json",
 
-        Authorization: "Bearer " + token,
+        Authorization: `Bearer  ${token}`,
       },
     };
     const response = await axios.get(
