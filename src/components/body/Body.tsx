@@ -20,6 +20,8 @@ const Body = () => {
         const res = data;
         if (res) {
           setRepoApi(res);
+          setSpin(false);
+          console.log("reeee", res);
         } else {
           setSpin(true);
         }

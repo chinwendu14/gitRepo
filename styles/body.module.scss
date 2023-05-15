@@ -16,9 +16,9 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.145);
     .body__containerFlex {
       width: 37%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
       p {
         display: flex;
         align-items: center;
@@ -82,14 +82,21 @@
     .body__containerHeader {
       .body__containerFlex {
         width: 100%;
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        align-items: flex-start;
-        justify-content: flex-start;
+        p {
+          display: flex;
+          align-items: flex-start;
+          padding: 5px 5px 10px 5px;
+          span {
+            margin: 0 10px 0 20px;
+          }
+        }
       }
     }
     .body__containerflexRepoSetting {
       flex-direction: column;
+      padding: 30px 15px;
+
       .body__containerflexSetting {
         width: 100%;
       }

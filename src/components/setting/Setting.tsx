@@ -60,12 +60,6 @@ const Setting = () => {
       name: Yup.string().required("Please Enter your name"),
     }),
     onSubmit: (values) => {
-      // loginVendor({
-      //   variables: {
-      //     email: values.email,
-      //     password: values.password,
-      //   },
-      // });
       profileApi();
       console.log("kkkknnbvbv", profileApi());
 
@@ -125,8 +119,6 @@ const Setting = () => {
                 <p style={{ marginBottom: "10px" }}>Bio</p>
                 <textarea
                   name="bio"
-                  cols={40}
-                  rows={8}
                   placeholder="Add a bio"
                   onChange={formik.handleChange}
                   value={formik.values.bio}

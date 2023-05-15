@@ -1,3 +1,5 @@
+@import "mixins";
+
 .repos {
   border-bottom: 1px solid rgba(0, 0, 0, 0.145);
   padding: 30px 0;
@@ -124,6 +126,23 @@
       margin-top: 30px;
       width: 150px;
       border-bottom: 2px solid #99e2a9;
+    }
+  }
+}
+
+@include maxWidth(480px) {
+  .repos {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    .repos__repoNames {
+      width: 100%;
+    }
+    .repos__starDiv {
+      width: 100%;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-top: 20px;
     }
   }
 }
