@@ -1,0 +1,49 @@
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #57606a;
+  padding: 5px;
+  border-radius: 5px;
+  span {
+    margin: 0 10px;
+    svg {
+      color: #57606a;
+    }
+  }
+  input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.537);
+    }
+  }
+  .webHeader__slash {
+    border: 1px solid #57606a;
+    border-radius: 5px;
+    color: #57606a;
+    padding: 3px 10px;
+    font-size: 10px;
+  }
+}
+.short {
+  width: 37%;
+}
+.long {
+  width: 100%;
+}
+.shadow {
+  border: 1px solid rgba(0, 0, 0, 0.145);
+  color: black;
+  padding: 7px 10px;
+  input {
+    color: black;
+
+    &::placeholder {
+      color: black;
+    }
+  }
+}
