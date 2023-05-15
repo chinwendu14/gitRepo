@@ -1,20 +1,10 @@
 import React from "react";
 import axios from "axios";
 
-export const token =
-  "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";
 export const restApi = async () => {
   try {
-    const config = {
-      headers: {
-        "Content-Type": "application/json",
-
-        Authorization: `Bearer  ${token}`,
-      },
-    };
     const response = await axios.get(
-      `https://api.github.com/users/chinwendu14/repos`,
-      config
+      `https://api.github.com/users/chinwendu14/repos`
     );
     const res = response.data;
     return res;
@@ -28,7 +18,7 @@ export const profileApi = async () => {
     const config = {
       headers: {
         Accept: "application/vnd.github.v3+json",
-        Authorization: "Bearer " + token,
+        // Authorization: "Bearer " + token,
       },
     };
     const payload = {
