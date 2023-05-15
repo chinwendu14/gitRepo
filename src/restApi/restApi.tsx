@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 
 export const token =
-  "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";
+  "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";
 export const restApi = async () => {
   try {
     const config = {
